@@ -1,5 +1,47 @@
 # Changelog
 
+## [3.18.0](https://github.com/langwatch/langwatch/compare/langwatch@v3.17.0...langwatch@v3.18.0) (2026-08-30)
+
+
+### Features
+
+* **agent-testing:** compare agents in one run ([#7654](https://github.com/langwatch/langwatch/issues/7654)) ([3e73916](https://github.com/langwatch/langwatch/commit/3e7391698f5e9b1cac2f8c5f0d0cacc9dec4d02a))
+* **agent-testing:** v2 polish round 6 ([#7590](https://github.com/langwatch/langwatch/issues/7590)) ([1f9efad](https://github.com/langwatch/langwatch/commit/1f9efad30ab94e86d00f57ea478bf0685b437f23))
+
+
+### Bug Fixes
+
+* **agent-cache:** a personal workspace run gets a key, and a project's runs share one ([#7639](https://github.com/langwatch/langwatch/issues/7639)) ([7b39491](https://github.com/langwatch/langwatch/commit/7b3949160f74bb7ba4ddd5933b1fc20a971ba70a))
+* **clickhouse:** a user is a tenant in its own right, so identity events can land ([#7630](https://github.com/langwatch/langwatch/issues/7630)) ([5179fbf](https://github.com/langwatch/langwatch/commit/5179fbf48146ae8d5bf5e2f94871bed3040daf22))
+* **docs:** align self-hosting version references with shipped chart 3.17.0 ([#7636](https://github.com/langwatch/langwatch/issues/7636)) ([e3912f5](https://github.com/langwatch/langwatch/commit/e3912f534e365949d6e2c057054b59250208591b))
+* **experiments:** an evaluator chip says what it checks, and the box has jq ([#7615](https://github.com/langwatch/langwatch/issues/7615)) ([2b113b3](https://github.com/langwatch/langwatch/commit/2b113b346c29f2e871d7d59d647420cdd63d11be))
+* **experiments:** persist browser-run results to the server ([#7629](https://github.com/langwatch/langwatch/issues/7629)) ([565a43a](https://github.com/langwatch/langwatch/commit/565a43a5634a40fd935e8d78eb69db0180b500b4))
+* **gateway:** a failure that never reached a provider stops calling itself a timeout ([#7602](https://github.com/langwatch/langwatch/issues/7602)) ([0d376c9](https://github.com/langwatch/langwatch/commit/0d376c930db8dc488e989faff413a916edf08dca))
+* **governance:** emit per-turn traces for Copilot Studio Dataverse Conversation view ([#7625](https://github.com/langwatch/langwatch/issues/7625)) ([c884ac3](https://github.com/langwatch/langwatch/commit/c884ac3a35e625d805d0257bdc9591e38276d0a7))
+* **governance:** suppress ingest secret for non-push sources ([#7626](https://github.com/langwatch/langwatch/issues/7626)) ([0835e02](https://github.com/langwatch/langwatch/commit/0835e02d39e7a1e3345c1ce8a375b4ab2902d6b1))
+* **identity:** accept better-auth 1.7's restated providerId on OAuth sign-in ([#7642](https://github.com/langwatch/langwatch/issues/7642)) ([8265c08](https://github.com/langwatch/langwatch/commit/8265c086e318bd3a579704cb3d4b11e8ad0a66b0))
+* **model-providers:** a latest alias resolves at the LiteLLM boundary ([#7651](https://github.com/langwatch/langwatch/issues/7651)) ([acb7a96](https://github.com/langwatch/langwatch/commit/acb7a96e7c19724873def92baa58ada54771401c))
+* **nlpgo:** raise Code block default timeout from 60s to 600s ([#7640](https://github.com/langwatch/langwatch/issues/7640)) ([6f9d4a4](https://github.com/langwatch/langwatch/commit/6f9d4a49c6d44cc0eb35d48a0aee9a29243139af))
+* **nlpgo:** wire the dead engine timeout knobs — code-block timeout, SSE heartbeat, per-node timeout_ms ([#7614](https://github.com/langwatch/langwatch/issues/7614)) ([33a4aff](https://github.com/langwatch/langwatch/commit/33a4aff3501adbe8a8e60c1e26701c9df9e44aff))
+* optional legacy answer fields, one vocabulary for test suites and run plans, and named targets for runs from code ([#7638](https://github.com/langwatch/langwatch/issues/7638)) ([6fd37f3](https://github.com/langwatch/langwatch/commit/6fd37f30428c9fc468230fa9e4a79e3dee8cc58f))
+* **python-sdk:** the agent cache takes a dict or list, and a refusal names the field ([#7641](https://github.com/langwatch/langwatch/issues/7641)) ([78e1cd7](https://github.com/langwatch/langwatch/commit/78e1cd7efd068ddd3c94d7eb8e713d574558fc33))
+* **scenarios:** fix the seven defects found while dogfooding a customer onboarding demo ([#7271](https://github.com/langwatch/langwatch/issues/7271)) ([7eeac5b](https://github.com/langwatch/langwatch/commit/7eeac5ba6809ed217ce3179d0a1fbb7656f2db52))
+
+
+### Miscellaneous
+
+* **navigation:** drop legacy chrome and the mode flag ([#7597](https://github.com/langwatch/langwatch/issues/7597)) ([7a17a3c](https://github.com/langwatch/langwatch/commit/7a17a3c5a81139d284b4b99255c19d291242b66f))
+
+
+### Documentation
+
+* **agent-testing:** rename the section to Agent Testing and rewrite it for the shipped interface ([#7659](https://github.com/langwatch/langwatch/issues/7659)) ([eb2f4b6](https://github.com/langwatch/langwatch/commit/eb2f4b626ddf85ec8ba1f9b49186dc3c333828e5))
+
+
+### Code Refactoring
+
+* **governance:** extract helpers from the three oversized service methods ([#7624](https://github.com/langwatch/langwatch/issues/7624)) ([5a9cd02](https://github.com/langwatch/langwatch/commit/5a9cd020013d92b7d693140c26041b77653cf71f))
+
 ## [3.17.0](https://github.com/langwatch/langwatch/compare/langwatch@v3.16.0...langwatch@v3.17.0) (2026-08-27)
 
 
